@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mtn_clone/presentation/drawer/menu_screen.dart';
 import 'package:mtn_clone/presentation/momo/momo_screen.dart';
 import 'package:mtn_clone/presentation/navbar_screen.dart';
 import 'package:mtn_clone/presentation/welcome_screen.dart';
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/welcome': (context) => const WelcomeScreen(),
         '/navBar': (context) => const NavBarScreen(),
+        '/menu': (context) => const MenuScreen(),
         '/momo': (context) => const MomoScreen(),
       },
     );

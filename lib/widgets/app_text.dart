@@ -6,11 +6,13 @@ class AppText extends StatelessWidget {
   final double fontsize;
   final Color? color;
   final FontWeight? fontWeight;
+  final TextAlign? textAlign;
   const AppText(
       {required this.text,
       required this.fontsize,
       this.color,
       this.fontWeight,
+      this.textAlign,
       super.key});
 
   @override
@@ -23,6 +25,7 @@ class AppText extends StatelessWidget {
         fontWeight: fontWeight ?? fontWeight,
         fontFamily: 'Times New Roman',
       ),
+      textAlign: textAlign ?? TextAlign.justify,
     );
   }
 }
