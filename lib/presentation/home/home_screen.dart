@@ -56,14 +56,22 @@ class HomeScreen extends StatelessWidget {
               title: 'GHc 20.0',
               subTitle: 'Bonus\t\tGHc 50.0',
               iconData: Icons.phone_android,
-              onTap: () {},
+              onTap: () {
+                Navigator.of(context).pushNamed(
+                  '/airtimeDetails',
+                );
+              },
             ),
             HomeCard(
               iconText: 'Data',
               title: '10.5 GB',
               subTitle: 'Bonus\t\t100 MB',
               iconData: Icons.wifi,
-              onTap: () {},
+              onTap: () {
+                Navigator.of(context).pushNamed(
+                  '/dataDetails',
+                );
+              },
             ),
             HomeCard(
               iconText: 'Voice',

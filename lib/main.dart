@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mtn_clone/presentation/drawer/menu_screen.dart';
+import 'package:mtn_clone/presentation/home/airtime_details.dart';
+import 'package:mtn_clone/presentation/home/data_details.dart';
 import 'package:mtn_clone/presentation/momo/momo_screen.dart';
 import 'package:mtn_clone/presentation/navbar_screen.dart';
 import 'package:mtn_clone/presentation/welcome_screen.dart';
@@ -33,6 +35,8 @@ class MyApp extends StatelessWidget {
         '/navBar': (context) => const NavBarScreen(),
         '/menu': (context) => const MenuScreen(),
         '/momo': (context) => const MomoScreen(),
+        '/airtimeDetails': (context) => const AirtimeDetails(),
+        '/dataDetails': (context) => const DataDetails(),
       },
     );
   }
